@@ -1,1 +1,13 @@
 Венгер Андрей Дмитриевич
+
+
+int  stringSize = 1000;
+char* _string = new char[stringSize];
+count = 0;
+in.open("result2.txt");
+while (!in.eof()) {
+	in.getline(_string, stringSize);
+	count++;
+}
+in.close();
+cout << count << endl;
